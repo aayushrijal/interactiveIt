@@ -11,6 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+$router->get(
+    '/',
+    [
+        'as' => 'home',
+        'uses' => 'Web\HomeController@index',
+    ]
+);
+
+$router->get(
+    '/postman',
+    [
+        'as' => 'postmanService',
+        'uses' => 'Web\HomeController@postman'
+    ]
+);
+
