@@ -14,9 +14,9 @@
     <div class="device-notification">
         <a class="device-notification--logo" href="#0">
             <img src="{{asset('images/logo.png')}}" alt="Global">
-            <p>POS IT Solutions</p>
+            <p>Interactive IT Solutions</p>
         </a>
-        <p class="device-notification--message">POS IT Solutions</p>
+        <p class="device-notification--message">Interactive IT Solutions</p>
     </div>
     <div class="perspective effect-rotate-left">
     <div class="container"><div class="outer-nav--return"></div>
@@ -25,7 +25,7 @@
             <header class="header">
             <a class="header--logo" href="#0">
                 <img src="{{asset('images/logo.png')}}" alt="Global">
-                <p>POS IT Solutions</p>
+                <p>Interactive IT Solutions</p>
             </a>
             <button class="header--cta cta">Hire Us</button>
             <div class="header--nav-toggle">
@@ -35,17 +35,17 @@
             <nav class="l-side-nav">
             <ul class="side-nav">
                 <li class="is-active"><span>Home</span></li>
-                <li><span>Works</span></li>
+                <li><span>Products</span></li>
                 <li><span>About</span></li>
                 <li><span>Contact</span></li>
-                <li><span>Hire us</span></li>
+                <li><span>Hire Us</span></li>                
             </ul>
             </nav>
             <ul class="l-main-content main-content">
             <li class="l-section section section--is-active">
                 <div class="intro">
                 <div class="intro--banner">
-                    <h1>Resturant POS<br>System for the<br>digital age.</h1>
+                    <h1>{{ $content_1 }}</h1>
                     <button class="cta">Hire Us
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                     <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
@@ -58,16 +58,16 @@
                 </div>
                 <div class="intro--options">
                     <div>
-                    <h3>connection with customers</h3>
-                    <p>Watch the "wow" factor in action when your guests are</p>
+                    <h3>{{ $content_2 }}</h3>
+                    <p>{{ $content_3 }}</p>
                     </div>
                     <div>
-                    <h3>high-speed ordering</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    <h3>{{ $content_4 }}</h3>
+                    <p>{{ $content_5 }}</p>
                     </div>
                     <div>
-                    <h3>business under control</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    <h3>{{ $content_6 }}</h3>
+                    <p>{{ $content_7 }}</p>
                     </div>
                 </div>
                 </div>
@@ -83,7 +83,7 @@
                             <img src="{{asset('images/img1.png')}}" alt="iPad POS System">
                         </div>
                         <p class="slider--item-title">iPad POS System</p>
-                        <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                        <p class="slider--item-description">{{ $content_8 }}</p>
                         </a>
                     </li>
                     <li class="slider--item slider--item-center">
@@ -92,16 +92,16 @@
                             <img src="{{asset('images/img2.jpg')}}" alt="iPad Digital Menus">
                         </div>
                         <p class="slider--item-title">iPad Digital Menus</p>
-                        <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                        <p class="slider--item-description">{{ $content_9 }}</p>
                         </a>
                     </li>
                     <li class="slider--item slider--item-right">
                         <a href="#0">
                         <div class="slider--item-image">
-                            <img src="{{asset('images/img3.png')}}" alt="iPad Self Order Kiosks">
+                            <img src="{{asset('images/img3.jpg')}}" alt="iPad Self Order Kiosks">
                         </div>
                         <p class="slider--item-title">iPad Self Order Kiosks</p>
-                        <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                        <p class="slider--item-description">{{ $content_10 }}</p>
                         </a>
                     </li>
                     </ul>
@@ -128,8 +128,8 @@
             <li class="l-section section">
                 <div class="about">
                 <div class="about--banner">
-                    <h2>We<br>believe in<br>passionate<br>people</h2>
-                    <a href="#0">Career
+                    <h2>{{ $content_11 }}</h2>
+                    <a href="#0">{{ $content_12 }}
                     <span>
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                         <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
@@ -142,33 +142,36 @@
                 </div>
                 <div class="about--options">
                     <a href="#0">
-                    <h3>Winners</h3>
+                    <h3>{{ $content_13 }}</h3>
                     </a>
                     <a href="#0">
-                    <h3>Philosophy</h3>
+                    <h3>{{ $content_14 }}</h3>
                     </a>
                     <a href="#0">
-                    <h3>History</h3>
+                    <h3>{{ $content_15 }}</h3>
                     </a>
                 </div>
                 </div>
             </li>
             <li class="l-section section">
                 <div class="contact">
-                <div class="contact--lockup">
-                    <div class="modal">
-                    <div class="modal--information">
-                        <p>Pawia 5, 31-154 Kraków, Poland</p>
-                        <a href="mailto:ouremail@gmail.com">ouremail@gmail.com</a>
-                        <a href="tel:+148126287560">+48 12 628 75 60</a>
+                    <div class="contact--lockup">
+                        <div  id="map" class="contact-map">
+                        </div>
+                        <div class="modal">
+                            <div class="modal--information">
+                                <p>Basantapur, Kathmandu, Nepal</p>
+                                <a href="mailto:devil.dewzone@gmail.com">devil.dewzone@gmail.com</a>
+                                <p>+977 1 4225212</p>
+                            </div>
+                            <ul class="modal--options">
+                            <li><a href="mailto:devil.dewzone@gmail.com">Contact Us</a></li>
+                            <li><a href="https://www.instagram.com/cheesemachineofficial/">Instagram</a></li>
+                                <li><a href="https://www.facebook.com/pg/CheeseMachinee/about/?ref=page_internal">Facebook</a></li>
+                                
+                            </ul>
+                        </div>
                     </div>
-                    <ul class="modal--options">
-                        <li><a href="#0">Bēhance</a></li>
-                        <li><a href="#0">dribbble</a></li>
-                        <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>
-                    </ul>
-                    </div>
-                </div>
                 </div>
             </li>
             <li class="l-section section">
@@ -185,7 +188,7 @@
                             <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                         </g>
                         </svg>
-                        App Design
+                        {{ $content_16 }}
                         </label>
                         <input id="opt-2" type="checkbox" value="graphic design">
                         <label for="opt-2">
@@ -195,7 +198,7 @@
                             <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                         </g>
                         </svg>
-                        Graphic Design
+                        {{ $content_17 }}
                         </label>
                         <input id="opt-3" type="checkbox" value="motion design">
                         <label for="opt-3">
@@ -205,7 +208,7 @@
                             <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                         </g>
                         </svg>
-                        Motion Design
+                        {{ $content_18 }}
                         </label>
                     </span>
                     <span class="options-b">
@@ -217,7 +220,7 @@
                             <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                         </g>
                         </svg>
-                        UX Design
+                        {{ $content_19 }}
                         </label>
                         <input id="opt-5" type="checkbox" value="webdesign">
                         <label for="opt-5">
@@ -227,7 +230,7 @@
                             <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                         </g>
                         </svg>
-                        Webdesign
+                        {{ $content_20 }}
                         </label>
                         <input id="opt-6" type="checkbox" value="marketing">
                         <label for="opt-6">
@@ -237,7 +240,7 @@
                             <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                         </g>
                         </svg>
-                        Marketing
+                        {{ $content_21 }}
                         </label>
                     </span>
                     </div>
@@ -261,15 +264,34 @@
     </div>
     <ul class="outer-nav">
         <li class="is-active">Home</li>
-        <li>Works</li>
+        <li>Products</li>
         <li>About</li>
         <li>Contact</li>
-        <li>Hire us</li>
+        <li>Hire Us</li>
+        
     </ul>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
     <script src="{{asset('js/functions-min.js')}}"></script>
+    <script>
+        function initMap() {
+            var interactiveItLocation = {lat: 27.7036864, lng: 85.3075725};
+            var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 18,
+            center: interactiveItLocation,
+            scaleControl: false,
+            scrollwheel: false,
+            });
+            var marker = new google.maps.Marker({
+            position: interactiveItLocation,
+            map: map
+            });
+        }
+        </script>
+        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key={{env('MAP_API_KEY')}}&callback=initMap">
+    </script>
     </body>
 </html>
