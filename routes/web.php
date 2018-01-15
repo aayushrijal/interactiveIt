@@ -19,11 +19,11 @@ $router->get(
     ]
 );
 
-Route::get('send_test_email', function(){
-	Mail::raw('Sending emails with Mailgun and Laravel is easy!', function($message)
-	{
-        $message->subject('Mailgun and Laravel are awesome!');
-		$message->from('no-reply@website_name.com', 'Website Name');
-		$message->to('aayush.rijal@yipl.com.np');
-	});
-});
+$router->get(
+    '/postman',
+    [
+        'as' => 'postmanService',
+        'uses' => 'Web\HomeController@postman'
+    ]
+);
+

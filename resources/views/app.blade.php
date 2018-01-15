@@ -177,10 +177,11 @@
             <li class="l-section section">
                 <div class="hire">
                 <h2>You want us to do</h2>
-                <form class="work-request">
+                <form class="work-request" action="{{ route('postmanService')}}" method="GET">
+                    {{ csrf_field() }}
                     <div class="work-request--options">
                     <span class="options-a">
-                        <input id="opt-1" type="checkbox" value="app design">
+                        <input id="opt-1" type="checkbox" value="{{ $content_16 }}" name="option1">
                         <label for="opt-1">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -190,7 +191,7 @@
                         </svg>
                         {{ $content_16 }}
                         </label>
-                        <input id="opt-2" type="checkbox" value="graphic design">
+                        <input id="opt-2" type="checkbox" value="{{ $content_17 }}" name="option2">
                         <label for="opt-2">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -200,7 +201,7 @@
                         </svg>
                         {{ $content_17 }}
                         </label>
-                        <input id="opt-3" type="checkbox" value="motion design">
+                        <input id="opt-3" type="checkbox" value="{{ $content_18 }}" name="option3">
                         <label for="opt-3">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -212,7 +213,7 @@
                         </label>
                     </span>
                     <span class="options-b">
-                        <input id="opt-4" type="checkbox" value="ux design">
+                        <input id="opt-4" type="checkbox" value="{{ $content_19 }}" name="option4">
                         <label for="opt-4">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -222,7 +223,7 @@
                         </svg>
                         {{ $content_19 }}
                         </label>
-                        <input id="opt-5" type="checkbox" value="webdesign">
+                        <input id="opt-5" type="checkbox" value="{{ $content_20 }}" name="option5">
                         <label for="opt-5">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -232,7 +233,7 @@
                         </svg>
                         {{ $content_20 }}
                         </label>
-                        <input id="opt-6" type="checkbox" value="marketing">
+                        <input id="opt-6" type="checkbox" value="{{ $content_21 }}" name="option6">
                         <label for="opt-6">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -246,11 +247,11 @@
                     </div>
                     <div class="work-request--information">
                     <div class="information-name">
-                        <input id="name" type="text" spellcheck="false">
+                        <input id="name" type="text" spellcheck="false" name="name">
                         <label for="name">Name</label>
                     </div>
                     <div class="information-email">
-                        <input id="email" type="email" spellcheck="false">
+                        <input id="email" type="email" spellcheck="false" name="email">
                         <label for="email">Email</label>
                     </div>
                     </div>

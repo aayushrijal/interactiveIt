@@ -1,12 +1,27 @@
 <?php
 
 namespace App\Http\Controllers\Web;
-
+use App\Interactive\Services\HomeService;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
 {
+    /**
+     * @var HomeService
+     */
+    private $home;
+
+    /**
+     * HomeController constructor.
+     *
+     * @param HomeService $home
+     */
+    public function __construct(HomeService $home)
+    {
+        $this->home = $home;
+    }
+
     public function index(){
         $content_1 = "Content 1";
         $content_2 = "Content 2";
@@ -23,12 +38,12 @@ class HomeController extends Controller
         $content_13 = "Content 13";
         $content_14 = "Content 14";
         $content_15 = "Content 15";
-        $content_16 = "Content 16";
-        $content_17 = "Content 17";
-        $content_18 = "Content 18";
-        $content_19 = "Content 19";
-        $content_20 = "Content 20";
-        $content_21 = "Content 21";        
+        $content_16 = "Web Development";
+        $content_17 = "UI/UX Development";
+        $content_18 = "POS Machine Purchase";
+        $content_19 = "Sales & Marketing";
+        $content_20 = "IT Solutions";
+        $content_21 = "Mobile App Development";
 
         return view('app',
             compact(
@@ -55,5 +70,15 @@ class HomeController extends Controller
                 'content_21'
             )
         );
+    }
+
+    public function postman(Request $request){
+        $sendMail = $this->home->mailService($request);
+
+        if($sendMail){
+            return redirect()->back()->with('success', 'Email successfully submitted');
+        }
+
+        return redirect()->back()->with('error', 'Email sending unsuccessful');
     }
 }
