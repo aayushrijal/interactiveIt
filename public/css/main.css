@@ -658,12 +658,12 @@ body{
 .intro--options>div{
     max-width:250px;
     text-decoration:none;
-    color:#282828;
+    color:#e9e9e9;
     -webkit-transition:color .2s ease-in-out;
     transition:color .2s ease-in-out
 }
 .intro--options>div:hover{
-    color:#fff
+    color:rgb(128, 128, 128)
 }
 .intro--options h3{
     font-size:16px;
@@ -944,17 +944,6 @@ body{
     position:relative;
     height:475px
 }
-.about--banner::before{
-    content:"";
-    position:absolute;
-    top:20px;
-    left:200px;
-    -webkit-transform:rotate(-25deg);
-    transform:rotate(-25deg);
-    border:5px solid #0f33ff;
-    border-right-color:transparent;
-    border-bottom-color:transparent
-}
 .about--banner::after{
     content:"";
     position:absolute;
@@ -973,25 +962,6 @@ body{
     font-weight:900;
     line-height:1;
     z-index:1
-}
-.about--banner h2::before{
-    content:"";
-    position:absolute;
-    top:60px;
-    left:268px;
-    width:30px;
-    height:30px;
-    background-color:#0f33ff;
-    border-radius:50%
-}
-.about--banner h2::after{
-    content:"";
-    position:absolute;
-    top:255px;
-    left:255px;
-    width:10px;
-    height:10px;
-    background-color:#0f33ff
 }
 .about--banner a{
     padding:5px 17px 5px 0;
@@ -1022,7 +992,7 @@ body{
     display:-webkit-flex;
     display:-ms-flexbox;
     display:flex;
-    max-width:600px;
+    max-width:850px;
     -webkit-box-pack:justify;
     -webkit-justify-content:space-between;
     -ms-flex-pack:justify;
@@ -1033,23 +1003,23 @@ body{
 }
 .about--options>a{
     position:relative;
-    width:150px;
-    height:75px;
+    width:250px;
+    height:190px;
     text-decoration:none;
     color:#fff;
-    border:10px solid #0f33ff;
+    border:2px solid #fff;
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat
 }
 .about--options>a:nth-child(1){
-    background-image:url("../images/about-winners.jpg")
+    background-image:url("../images/waiter.jpg")
 }
 .about--options>a:nth-child(2){
-    background-image:url("../images/about-philosophy.jpg")
+    background-image:url("../images/retail.jpg")
 }
 .about--options>a:nth-child(3){
-    background-image:url("../images/about-history.jpg")
+    background-image:url("../images/medical.jpg")
 }
 .about--options>a:hover h3{
     bottom:-50px
